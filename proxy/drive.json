@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "drive-trabalho-de-cidadania",
+  "private_key_id": "f2b559788e2e2f0a211197715ad3f3314b253bd8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkKcLGxMw3Hd0m\n2Ox0kGUAAxj3kQdco27bebQ2cHGzE+oxHVrq57a+GAr07FT8QrZSvq/sktmo0xYh\nGrKS3Egc2mkrvc3gPC8sdVJTUCB3R3qLaVkiQ+/0zPazY3GmufCJpPX5H9Hpb1o8\nX4c7WIvRgX1DhqhgMfTydLHDISeCPDIf3JDq17e/ro55+suH/oaPzivjw8PZSzOe\nIsJXPCv1l5ybTpgvlcfssxajxdyX3D0N5450q+HKHFGshgms+kffEbTALBhSIJIw\n3nadu86bT9Ljq02MUeky0GaKz9fMHl4msVNOkbH1PCb21LB6AAY8dCczynPB35lz\nk2pJDFg3AgMBAAECggEAE9DysRm6aQDS3EidKmjvuDOnhOLd16Hm1Nl5FoU2RF6o\nC2u2uNplpcazM+N/UsAe0BgylkUXvxhT+IUHf1DV5525ykzsGCBLtXsoB+SJNrzL\nHx8FYmx+/7bqJLdhVbXmQkdGZd8gcKQ/aUBCy7ghkJWn8EnF8260WbwaZSqQYVj/\nNtIDpIR/Ua3LRX0AFdVBzeS9yo8bXPzlD3E1H/AMP176billdQl2xq2cNpT4p6vo\nynFpwz1EhAbgjaHuW3e4YhDa0jxHtjbRmArvLG/LvTL3zwZdLBrpjzYuLxi5RLin\njpEQafeQy/RtTBmuDXtb/y21IY+9LMIFXix8niupKQKBgQDc1TCWnSDI6fk7t4jG\n6MEmyl3EkI/i0BMFFBVpKDVKqrqMXdqEqbQnILC+nK4UVBjo51zF6y8u/MpUVNJz\neoe/hnhM1Hek0VQIfrQno9YEj6YSyTfWbR5zbNSbaLRpJacqQdV9Zq3RIv2L4A1w\nDYx5sj0+/FxOJAyKXqwIyr+F8wKBgQC+TknpdYuTaX4mrRQ4Xv56XcW2/FG/9gWJ\nbXg3ElFmLnGzCejX7yaodi2MSGv5sKLbTpCZ+3VDeV2e1bph9IIBaWszEuwD2FkV\nZgmV5bS5zQ5TNk6yrnS9tKWjayWMkaDXTgp/08NMoMJFQNCQ/qxCtZYh8CU3TSUF\n0gU5N1uhrQKBgQCkxd3PQ8amow34ZOWFpT4Zt31noYX68s5+R5ICOKIq6GDxQ0Y9\nHnLxjw7R6w5o1KcRgTBT7Tvzj2NYsUGmMJMBcVBp406yiA5vmDrMKQ8TsCt2cPVc\n5WaHMXkhzGpw2kt02FJ3kxm2pqkQqUjdhv59/2R7jslA9Nz2kdVDaiSlyQKBgGpB\nbCNd7kCwdi9CFDglUhEgqnQxDbQQuaax6J1XLPvQkstUjR2D+iG1WlkpVqBjb4rj\novlW3XJ/ITa+PwLScoQ3SBOMTRsYgSThhBid2Pqk84qil+5MWgJSCunjuWNzLEsK\n1/HnWvQ+Djp8pfdPOv9ERD9OxnjKKhHF4gTAU/lBAoGAXncuP1yT2Ehn6OtT6yyb\n1ZxGx4BPDSdTzugNfAwsEcoPkvh5cx6YP08G6PgE2Wl6iGtP+FBC54wUUFBgmiiG\nh9cf1Olb3o+/BbTTv1gKevcufRHR5P9U3Wf/21j9zaJX5Q7N0s3Hpy3/Xj+ajdjM\nb6e0OarFOMU+dax51iJq9Eo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "googledrive@drive-trabalho-de-cidadania.iam.gserviceaccount.com",
+  "client_id": "108513760694725479787",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googledrive%40drive-trabalho-de-cidadania.iam.gserviceaccount.com"
+}

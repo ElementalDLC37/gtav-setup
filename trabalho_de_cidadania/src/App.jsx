@@ -1,5 +1,6 @@
 import "./App.css"
 import { useEffect, useRef } from 'react';
+import Conn from "./components/contection";
 
 function MeuVideo() {
   const videoRef = useRef(null);
@@ -12,6 +13,7 @@ function MeuVideo() {
 
   return (
     <>
+    <Conn />
     <button onClick={handleButtonClick}>START</button>
     <audio ref={audioRef} src="../public/video.mp4" />
     <video ref={videoRef} width="640" height="360" preload="auto" muted playsInline>
