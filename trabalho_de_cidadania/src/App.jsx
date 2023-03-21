@@ -24,7 +24,7 @@ function MeuVideo() {
       { buttonPressioned ? <MenuBase /> : <div></div> }
       <Conn />
       <button className="buttonGenesis" onClick={handleButtonClick}>START</button>
-      <audio ref={audioRef} src="../public/video.mp4" />
+      <audio ref={audioRef} src="./public/video.mp4" />
       <video ref={videoRef} width="640" height="360" preload="auto" muted playsInline>
         <source src="../public/video.mp4" type="video/mp4"/>
       </video>
