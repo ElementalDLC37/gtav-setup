@@ -13,12 +13,6 @@
     justify-content: center;
 }
 
-.menu-interface {
-  margin-top: 21px;
-  width: min-content;
-  height: min-content;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -104,7 +98,6 @@
   .bottom-interface-content {
     display: flex;
     flex-direction: row;
-    height: 600px;
     margin-top: 13px;
   }
 
