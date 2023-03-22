@@ -53,9 +53,6 @@ export function Apresentation() {
             </div>
             <div className="bottom-interface-content">
                 <MenuButtonSec content={content} />
-                <div className="data-content">
-                    
-                </div>
             </div>
         </div>
     </div>
@@ -64,14 +61,28 @@ export function Apresentation() {
 
 function MenuButtonSec({content}) {
     const [data, setData] = useState(<></>);
+    const [dataContent, setDataContent] = useState(<></>);
+
+    const bruno = {
+        apresentacao: <>
+        <h1>a</h1>
+        </>,
+        contextualizacao: <>
+        <h1 className="data-content-title">Contextualização</h1>
+        <p className="data-content-text">
+            Projetos e valores de cidadania são dois elementos fundamentais para a promoção de uma sociedade mais justa e equilibrada. A cidadania é um conceito amplo que abrange os direitos e deveres que um indivíduo tem em relação à sociedade e ao Estado em que vive. Já os projetos são planos de ação para alcançar determinados objetivos, que podem estar relacionados a diversas áreas da vida em sociedade.
+        </p>
+        </>,
+    }
 
     useEffect(() => {
         switch (content) {
             case "Bruno":
                 setData(<>
-                    <button class="btn-sec">Apresentação</button>
-                    <button class="btn-sec">Contextualização</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(bruno.apresentacao) }}>Apresentação</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(bruno.contextualizacao) }}>Contextualização</button>
                 </>)
+                
                 break
             case "Rui":
                 setData(<>
@@ -102,9 +113,14 @@ function MenuButtonSec({content}) {
     }, [content])
     
     return (
+    <>
         <div className="menu-btn-sec">
             {data}
         </div>
+        <div className="data-content">
+            {dataContent}
+        </div>
+    </>
     )
 }
 
