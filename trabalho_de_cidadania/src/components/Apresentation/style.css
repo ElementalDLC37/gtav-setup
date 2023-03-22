@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+.menu-interface {
+  margin: auto 5%;
+  width: min-content;
+  height: min-content;
+}
+
 .header {
   display: flex;
   flex-direction: row;
