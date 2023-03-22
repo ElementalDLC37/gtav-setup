@@ -99,11 +99,20 @@ function MenuButtonSec({content}) {
         <p className="data-content-text">
         O preconceito é um problema que afeta muitas pessoas em todo o mundo. Infelizmente, muitas vezes ele é baseado em estereótipos e ideias preconcebidas que são perpetuadas pela falta de conhecimento e pela falta de contato com pessoas diferentes. Como resultado, muitas pessoas sofrem discriminação em suas vidas cotidianas, seja por causa de sua raça, gênero, orientação sexual, religião ou outras características.        
         </p>
+        <p className="data-content-text">
+        O combate ao preconceito é fundamental para a construção de uma sociedade mais justa e igualitária. Isso porque o preconceito é uma barreira que impede as pessoas de acessarem seus direitos e oportunidades de forma plena, limitando suas escolhas e possibilidades.        
+        </p>
         </>,
         projetosEducacionais: <>
         <h1 className="data-content-title">Projetos Educacionais</h1>
         <p className="data-content-text">
-            Os projetos de educação são fundamentais para formar cidadãos conscientes e críticos. O "Projeto Âncora" é um exemplo de projeto que tem como objetivo promover a educação integral de crianças e jovens em situação de vulnerabilidade social. O projeto oferece uma educação personalizada, com atividades culturais, esportivas e artísticas, além de apoio psicológico e pedagógico.        
+        Projetos educacionais são iniciativas que buscam aprimorar a educação e o processo de ensino-aprendizagem em diferentes níveis, desde a educação infantil até o ensino superior. Esses projetos têm como objetivo principal melhorar a qualidade da educação, tornando-a mais acessível e efetiva para todos os alunos.        
+        </p>
+        <p className="data-content-text">
+        Os projetos educacionais podem ser desenvolvidos tanto por instituições públicas quanto privadas, e abrangem diversas áreas, tais como tecnologia, meio ambiente, cultura, esporte, entre outras. Eles visam não apenas a melhoria do desempenho escolar, mas também o desenvolvimento de habilidades e competências que auxiliem na formação integral dos alunos.        
+        </p>
+        <p className="data-content-text">
+        Um dos principais benefícios dos projetos educacionais é a possibilidade de promover a inclusão social, ao oferecer oportunidades para que alunos de diferentes contextos socioeconômicos e culturais tenham acesso a uma educação de qualidade. Esses projetos também contribuem para a formação de cidadãos críticos e conscientes de seus direitos e deveres na sociedade.        
         </p>
         </>,
     }
