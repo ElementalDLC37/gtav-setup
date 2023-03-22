@@ -4,6 +4,15 @@ import { useState, useEffect } from 'react';
 export function Apresentation() {
     const [isVisible, setIsVisible] = useState(false);
     const [content, setContent] = useState("Bruno");
+    const [horario, setHorario] = useState(new Date().toLocaleTimeString());
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+        setHorario(new Date().toLocaleTimeString());
+        }, 1000);
+
+        return () => clearInterval(intervalId);
+    }, []);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -26,8 +35,12 @@ export function Apresentation() {
             <div className="header">
                 <h1>Projetos e Valores</h1>
                 <div className="user">
-                    <h2>Bruno</h2>
-                    <h2></h2>
+                    <div className="user-info">
+                        <h2>Bruniiiiiinhu</h2>
+                        <h2>Quinta-feira {horario}</h2>
+                        <h2>$4736872736,56</h2>
+                    </div>
+                    <img src="./bruninho.jpeg" alt="" />
                 </div>
             </div>
             <div className="menu-btn">
@@ -40,6 +53,9 @@ export function Apresentation() {
             </div>
             <div className="bottom-interface-content">
                 <MenuButtonSec content={content} />
+                <div className="data-content">
+                    
+                </div>
             </div>
         </div>
     </div>

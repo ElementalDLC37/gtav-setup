@@ -17,13 +17,42 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 13px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .header > h1 {
   color: gainsboro;
   text-shadow: 4px 5px 5px black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 13px;
+  text-transform: uppercase;
+  color: gainsboro;
+  text-shadow: 2px 2.5px 5px black;
+}
+
+.user-info > h2 {
+  text-align: end;
+  line-height: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.user > img {
+  object-fit: cover;
+  margin-top: 2px;
+  border-radius: 2px;
+  height: 70px;
+  width: 70px;
 }
 
 .btn {
@@ -70,7 +99,7 @@
     display: flex;
     flex-direction: row;
     height: 600px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
 
   .menu-btn-sec {
@@ -81,7 +110,7 @@
   .btn-sec {
     position: relative;
     display: inline-block;
-    width: 400px;
+    width: 403px;
     height: 40px;
     background-color: rgba(10, 10, 10, 0.5);
     margin: 2px;
@@ -100,4 +129,11 @@
     background-color: gainsboro;
     color: rgb(10, 10, 10);;
     font-weight: 700;
+  }
+
+  .data-content {
+    margin-left: 3px;
+    background-color: rgba(10, 10, 10, 0.5);
+    width: 812px;
+    height: 500px;
   }

@@ -11,6 +11,7 @@ function TimeLine({audioRef}) {
     <LoadingWindowText />
     <TextPreLoadingWindowText /> 
     <MenuBase audioRef={audioRef} />
+    <Apresentation />
     </>
   )
 }
