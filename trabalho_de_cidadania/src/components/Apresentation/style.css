@@ -2,7 +2,7 @@
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
-    background: rgba(1, 1, 1, 0.655);
+    background: rgba(1, 1, 1, 0.863);
     z-index: 4;
     transition: 0.5s;
     opacity: 0;
