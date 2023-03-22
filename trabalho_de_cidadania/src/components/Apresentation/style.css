@@ -2,7 +2,7 @@
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
-    background: rgba(0, 0, 0, 0.474);
+    background: rgba(229, 133, 133, 0.474);
     z-index: 4;
     transition: 0.5s;
     opacity: 0;
@@ -12,3 +12,92 @@
     align-items: center;
     justify-content: center;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.header > h1 {
+  color: gainsboro;
+  text-shadow: 4px 5px 5px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(10, 10, 10, 0.5);
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gainsboro;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .btn-clicked {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(10, 10, 10, 0.5);
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gainsboro;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    background-color: gainsboro;
+    color: rgb(10, 10, 10);;
+    font-weight: 700;
+    border-top: 7px solid #00FF00;
+  }
+
+  .bottom-interface-content {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin-top: 20px;
+  }
+
+  .menu-btn-sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-sec {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    background-color: rgba(10, 10, 10, 0.5);
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gainsboro;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .btn-sec:focus {
+    background-color: gainsboro;
+    color: rgb(10, 10, 10);;
+    font-weight: 700;
+  }
