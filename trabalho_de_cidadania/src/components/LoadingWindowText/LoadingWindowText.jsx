@@ -2,7 +2,7 @@ import "./style.css"
 import { useState, useEffect } from 'react';
 
 
-export default function LoadingWindowText(genesisButton) {
+export default function LoadingWindowText() {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
       const timer = setTimeout(() => {
@@ -10,7 +10,7 @@ export default function LoadingWindowText(genesisButton) {
       }, 21000);
 
       return () => clearTimeout(timer);
-  }, [genesisButton]);
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);

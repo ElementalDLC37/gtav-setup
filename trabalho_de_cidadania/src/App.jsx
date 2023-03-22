@@ -1,12 +1,33 @@
 import "./App.css"
-import { useEffect, useRef, useState } from 'react';
-import Conn from "./components/contection";
+import { useContext, useEffect, useRef, useState } from 'react';
 import LoadingWindowText from "./components/LoadingWindowText/LoadingWindowText";
 import TextPreLoadingWindowText from "./components/TextPreLoadingWindowText/TextPreLoadingWindowText";
 import MenuBase from "./components/MenuBase/MenuBase";
+import { Apresentation } from "./components/Apresentation/Apresentation";
 
+function TimeLine({audioRef}) {
+  return (
+    <>
+    <LoadingWindowText />
+    <TextPreLoadingWindowText /> 
+    <MenuBase audioRef={audioRef} />
+    
+    </>
+  )
+}
 
-function MeuVideo() {
+function Media({ videoRef, audioRef }) {
+  return (
+    <>
+      <audio ref={audioRef} src="./video.mp3" />
+      <video ref={videoRef} width="640" height="360" preload="auto" muted playsInline>
+        <source src="./video.mp4" type="video/mp4"/>
+      </video>
+    </>
+  )
+}
+
+function App() {
   const videoRef = useRef(null);
   const audioRef = useRef(null);
   const [buttonPressioned, setButtonPressioned] = useState(false)
@@ -15,21 +36,19 @@ function MeuVideo() {
     audioRef.current.play();
     videoRef.current.play();
     setButtonPressioned(true)
+    setTimeout(() => {
+      videoRef.current.pause();
+    }, 15500);
   }
 
   return (
     <>
-      { buttonPressioned ? <LoadingWindowText /> : <div></div> }
-      { buttonPressioned ? <TextPreLoadingWindowText /> : <div></div> }
-      { buttonPressioned ? <MenuBase /> : <div></div> }
-      <Conn />
-      <button className="buttonGenesis" onClick={handleButtonClick}>START</button>
-      <audio ref={audioRef} src="./video.mp3" />
-      <video ref={videoRef} width="640" height="360" preload="auto" muted playsInline>
-        <source src="./video.mp4" type="video/mp4"/>
-      </video>
+      {buttonPressioned ? <TimeLine audioRef={audioRef} /> : <button className="buttonGenesis" onClick={handleButtonClick}>START</button>}
+      <Media audioRef={audioRef} videoRef={videoRef}/> 
     </>
   );
 }
 
-export default MeuVideo;
+
+
+export default App;

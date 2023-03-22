@@ -15,6 +15,12 @@
     font-family: sans-serif;
 }
 
+.imageAnimation {
+    position: absolute;
+    z-index: 4;
+    transition: 2s;
+}
+
 .menu {
     position: absolute;
     right: 0;
@@ -43,6 +49,23 @@
     left: 0;
     bottom: 0;
     max-width: 500px;
+}
+
+.loading-icon {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 8px solid #ffffff79;
+    border-top-color: #ffffff;
+    animation: loading 1.5s linear infinite;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.723), rgba(199, 199, 199, 0));
+    background-clip: padding-box, border-box;
+}
+  
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes show {

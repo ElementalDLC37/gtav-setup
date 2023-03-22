@@ -1,8 +1,8 @@
 import "./style.css"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { useSpring, animated } from 'react-spring';
 
-
-export default function MenuBase(genesisButton) {
+export default function MenuBase({audioRef}) {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
       const timer = setTimeout(() => {
@@ -10,22 +10,69 @@ export default function MenuBase(genesisButton) {
       }, 31000);
 
       return () => clearTimeout(timer);
-  }, [genesisButton]);
+  }, []);
 
   return (
-    isVisible ? <LoadingWindowTextData /> : null
+    <>
+    {isVisible ? <><LoadingWindowTextData setIsVisible={setIsVisible} audioRef={audioRef} /><ImageTransition /></> : null}
+    </>
   )
 }
 
-function LoadingWindowTextData() {
+function LoadingWindowTextData({setIsVisible, audioRef}) {
+  const [loadingApresentation, setLoadingApresentation] = useState(false)
+
+  useEffect(() => {
+    if(loadingApresentation) {
+      const timer = setTimeout(() => {
+        setIsVisible(false)
+        audioRef.current.pause()
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [loadingApresentation])
+
   return (
     <div className="menuBase">
-        <img className="logo" src="https://i.ibb.co/X7g0P4r/20230321-164850.png" alt="" />
-        <div className="menu">
-            <button>Apresentação</button>
-            <button>Agradecimentos</button>
-            <button>Bônus</button>
+        <img className="logo" src="https://i.ibb.co/X7g0P4r/20230321-164850.png" />
+        <div className="menu"> 
+        {
+          loadingApresentation === false ? <><button onClick={() => { setLoadingApresentation(true) }}>Apresentação</button>
+          <button>Agradecimentos</button>
+          <button>Bônus</button></> : <><button>Carregando</button><div class="loading-icon"></div></>
+        }
         </div>
     </div>
   )
 }
+
+function ImageTransition()  {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    'https://picsum.photos/200/300?random=1',
+    'https://picsum.photos/200/300?random=2',
+    'https://picsum.photos/200/300?random=3',
+    'https://picsum.photos/200/300?random=4',
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 8000);
+
+    return () => clearInterval(intervalId);
+  }, [currentImage, images]);
+
+  const props = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1000, loop: true },
+    onRest: () => setCurrentImage((currentImage + 1) % images.length),
+  });
+
+  return (
+    <animated.img style={props} src={images[currentImage]} alt="Imagem" className="imageAnimation" />
+  );
+}
+
