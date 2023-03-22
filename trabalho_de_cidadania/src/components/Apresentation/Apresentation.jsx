@@ -26,7 +26,8 @@ export function Apresentation() {
             <div className="header">
                 <h1>Projetos e Valores</h1>
                 <div className="user">
-                    
+                    <h2>Bruno</h2>
+                    <h2></h2>
                 </div>
             </div>
             <div className="menu-btn">
