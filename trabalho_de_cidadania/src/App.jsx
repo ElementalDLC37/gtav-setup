@@ -1,5 +1,5 @@
 import "./App.css"
-import { useContext, useEffect, useRef, useState } from 'react';
+import { Component, useEffect, useRef, useState } from 'react';
 import LoadingWindowText from "./components/LoadingWindowText/LoadingWindowText";
 import TextPreLoadingWindowText from "./components/TextPreLoadingWindowText/TextPreLoadingWindowText";
 import MenuBase from "./components/MenuBase/MenuBase";
@@ -57,7 +57,7 @@ function App() {
   return (
     <>
       {buttonPressioned ? <TimeLine audioRef={audioRef} /> : <button className="buttonGenesis" onClick={handleButtonClick}>START</button>}
-      <Media audioRef={audioRef} videoRef={videoRef}/> 
+      <Media audioRef={audioRef} videoRef={videoRef}/>
     </>
   );
 }

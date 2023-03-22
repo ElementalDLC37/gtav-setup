@@ -60,7 +60,7 @@
     display: inline-block;
     width: 200px;
     height: 40px;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.6);
     margin: 2px;
     font-size: 16px;
     font-weight: 500;
@@ -78,7 +78,7 @@
     display: inline-block;
     width: 200px;
     height: 40px;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.6);
     margin: 2px;
     font-size: 16px;
     font-weight: 500;
@@ -111,7 +111,7 @@
     display: inline-block;
     width: 403px;
     height: 40px;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.6);
     margin: 2px;
     font-size: 16px;
     font-weight: 500;
@@ -132,7 +132,7 @@
 
   .data-content {
     margin-left: 3px;
-    background-color: rgba(10, 10, 10, 0.5);
+    background-color: rgba(10, 10, 10, 0.6);
     width: 812px;
     height: 500px;
   }
@@ -141,15 +141,19 @@
     position: relative;
     margin: 5px 4%;
     margin-top: 13px;
-    font-size: 34px;
+    margin-bottom: 0;
+    font-size: 40px;
     font-weight: 900;
     color: gainsboro;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   .data-content-text {
+    font-size: 21px;
     width: 92%;
     margin: 0 4%;
+    margin-top: 5px;
+    margin-bottom: 21px;
   }
 
   .back {

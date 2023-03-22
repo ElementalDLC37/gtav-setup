@@ -53,12 +53,57 @@ function MenuButtonSec({content}) {
 
     const bruno = {
         apresentacao: <>
-        <h1>a</h1>
+        <h1 className="data-content-title">Saudações!</h1>
+        <p className="data-content-text">
+            Nosso trabalho de cidadania e civismo tem como objetivo promover a conscientização e a participação ativa dos indivíduos na construção de uma sociedade mais justa e solidária. Por meio de ações e projetos que incentivam o respeito aos direitos e deveres do cidadão, buscamos contribuir para a formação de uma cultura de responsabilidade e compromisso social. Nossa iniciativa busca inspirar a transformação positiva na comunidade, fortalecendo a identidade nacional e promovendo valores como a ética, a cidadania e o respeito mútuo.
+        </p>
+        <p className="data-content-text">
+            É bicho fei.
+        </p>
         </>,
         contextualizacao: <>
         <h1 className="data-content-title">Contextualização</h1>
         <p className="data-content-text">
             Projetos e valores de cidadania são dois elementos fundamentais para a promoção de uma sociedade mais justa e equilibrada. A cidadania é um conceito amplo que abrange os direitos e deveres que um indivíduo tem em relação à sociedade e ao Estado em que vive. Já os projetos são planos de ação para alcançar determinados objetivos, que podem estar relacionados a diversas áreas da vida em sociedade.
+        </p>
+        <p className="data-content-text">
+            Projetos e valores de cidadania estão intimamente conectados. Os projetos são uma forma concreta de aplicar os valores que uma sociedade valoriza, como a igualdade, a solidariedade, a responsabilidade social e a justiça. Ao mesmo tempo, os valores de cidadania servem de base para a concepção e a implementação de projetos que visam o bem comum.        
+        </p>
+        </>,
+    }
+
+    const rui = {
+        exemplos: <>
+        <h1 className="data-content-title">Exemplos</h1>
+        <p className="data-content-text">
+            Existem inúmeros exemplos de projetos de cidadania que buscam promover o bem-estar da sociedade e combater desigualdades sociais. Muitos desses projetos são realizados por voluntários, ONGs, instituições de caridade e outros grupos da sociedade civil. Neste texto, vamos explorar alguns exemplos de projetos que envolvem ações voluntárias, campanhas de arrecadação, iniciativas de combate ao preconceito e projetos de educação.
+        </p>
+        </>,
+        acoesVoluntarias: <>
+        <h1 className="data-content-title">Ações voluntárias</h1>
+        <p className="data-content-text">
+        As ações voluntárias são uma forma de contribuir para a sociedade sem receber remuneração. É um trabalho realizado por pessoas que dedicam parte do seu tempo para ajudar outras pessoas ou causas sociais. As ações voluntárias podem ser realizadas em diferentes áreas, como saúde, educação, meio ambiente, assistência social, entre outras.        
+        </p>
+        <p className="data-content-text">
+        As ações voluntárias são importantes porque ajudam a promover a solidariedade e a empatia, além de proporcionar benefícios tanto para quem recebe quanto para quem realiza as atividades. Para quem recebe, as ações voluntárias representam uma oportunidade de receber ajuda e apoio em momentos difíceis. Para quem realiza as atividades, as ações voluntárias permitem desenvolver habilidades pessoais e profissionais, além de promover um senso de responsabilidade e engajamento com a sociedade.        
+        </p>
+        </>,
+        campanhasDeArrecadacao: <>
+        <h1 className="data-content-title">Campanhas de arrecadação</h1>
+        <p className="data-content-text">
+            As campanhas de arrecadação são outra forma importante de contribuir para a sociedade. O projeto "Criança Esperança" é um exemplo de campanha que tem como objetivo arrecadar fundos para projetos sociais voltados para crianças e adolescentes em situação de vulnerabilidade social. A iniciativa é uma parceria entre a Rede Globo e a UNESCO, e já beneficiou milhões de crianças em todo o Brasil. 
+        </p>
+        </>,
+        combateAoPreconceito: <>
+        <h1 className="data-content-title">Combate ao Preconceito</h1>
+        <p className="data-content-text">
+        O preconceito é um problema que afeta muitas pessoas em todo o mundo. Infelizmente, muitas vezes ele é baseado em estereótipos e ideias preconcebidas que são perpetuadas pela falta de conhecimento e pela falta de contato com pessoas diferentes. Como resultado, muitas pessoas sofrem discriminação em suas vidas cotidianas, seja por causa de sua raça, gênero, orientação sexual, religião ou outras características.        
+        </p>
+        </>,
+        projetosEducacionais: <>
+        <h1 className="data-content-title">Projetos Educacionais</h1>
+        <p className="data-content-text">
+            Os projetos de educação são fundamentais para formar cidadãos conscientes e críticos. O "Projeto Âncora" é um exemplo de projeto que tem como objetivo promover a educação integral de crianças e jovens em situação de vulnerabilidade social. O projeto oferece uma educação personalizada, com atividades culturais, esportivas e artísticas, além de apoio psicológico e pedagógico.        
         </p>
         </>,
     }
@@ -74,7 +119,11 @@ function MenuButtonSec({content}) {
                 break
             case "Rui":
                 setData(<>
-                    <button class="btn-sec">Exemplos e Projetos</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(rui.exemplos) }}>Exemplos e Projetos</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(rui.acoesVoluntarias) }}>Ações Voluntárias</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(rui.campanhasDeArrecadacao) }}>Campanhas de Arrecadação</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(rui.combateAoPreconceito) }}>Combate ao Preconceito</button>
+                    <button class="btn-sec" onClick={() => { setDataContent(rui.projetosEducacionais) }}>Projetos Educacionais</button>
                 </>)
                 break
             case "Renan":
