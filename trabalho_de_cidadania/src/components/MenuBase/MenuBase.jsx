@@ -2,7 +2,7 @@ import "./style.css"
 import { useState, useEffect, useContext } from 'react';
 import { useSpring, animated } from 'react-spring';
 
-export default function MenuBase({audioRef}) {
+export default function MenuBase({audioRef, setLoadingApresentation, loadingApresentation}) {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
       const timer = setTimeout(() => {
@@ -14,13 +14,12 @@ export default function MenuBase({audioRef}) {
 
   return (
     <>
-    {isVisible ? <><LoadingWindowTextData setIsVisible={setIsVisible} audioRef={audioRef} /><ImageTransition /></> : null}
+    {isVisible ? <><LoadingWindowTextData setIsVisible={setIsVisible} audioRef={audioRef} setLoadingApresentation={setLoadingApresentation} loadingApresentation={loadingApresentation} /><ImageTransition /></> : null}
     </>
   )
 }
 
-function LoadingWindowTextData({setIsVisible, audioRef}) {
-  const [loadingApresentation, setLoadingApresentation] = useState(false)
+function LoadingWindowTextData({setIsVisible, audioRef, setLoadingApresentation, loadingApresentation}) {
 
   useEffect(() => {
     if(loadingApresentation) {

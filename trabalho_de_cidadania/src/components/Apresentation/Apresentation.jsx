@@ -1,7 +1,7 @@
 import "./style.css"
 import { useState, useEffect } from 'react';
 
-export function Apresentation() {
+export function Apresentation(loadingApresentation) {
     const [isVisible, setIsVisible] = useState(false);
     const [content, setContent] = useState("Bruno");
     const [horario, setHorario] = useState(new Date().toLocaleTimeString());
@@ -13,21 +13,6 @@ export function Apresentation() {
 
         return () => clearInterval(intervalId);
     }, []);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(true);
-        }, 1000);
-
-        return () => clearTimeout(timer);
-    }, []);
-    useEffect(() => {
-        const timer = setTimeout(() => {
-        setIsVisible(false);
-        }, 10000);
-
-        return () => clearTimeout(timer);
-    }, [isVisible]);
 
   return (
     <div className="apresentation">

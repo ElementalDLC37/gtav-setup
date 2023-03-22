@@ -6,12 +6,25 @@ import MenuBase from "./components/MenuBase/MenuBase";
 import { Apresentation } from "./components/Apresentation/Apresentation";
 
 function TimeLine({audioRef}) {
+  const [loadingApresentation, setLoadingApresentation] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if(loadingApresentation === true) {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [loadingApresentation]);
+
   return (
     <>
     <LoadingWindowText />
     <TextPreLoadingWindowText /> 
-    <MenuBase audioRef={audioRef} />
-    <Apresentation />
+    <MenuBase audioRef={audioRef} setLoadingApresentation={setLoadingApresentation} loadingApresentation={loadingApresentation} />
+    {isVisible ? <Apresentation loadingApresentation={loadingApresentation} /> : <></>}
     </>
   )
 }
