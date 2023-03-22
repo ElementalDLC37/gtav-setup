@@ -15,6 +15,8 @@ export function Apresentation(loadingApresentation) {
     }, []);
 
   return (
+    <>
+    <img src="gta.jpg" className="back" />
     <div className="apresentation">
         <div className="menu-interface">
             <div className="header">
@@ -41,6 +43,7 @@ export function Apresentation(loadingApresentation) {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

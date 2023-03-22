@@ -7,12 +7,12 @@ import { Apresentation } from "./components/Apresentation/Apresentation";
 
 function TimeLine({audioRef}) {
   const [loadingApresentation, setLoadingApresentation] = useState(false)
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisiblee, setIsVisiblee] = useState(false);
 
   useEffect(() => {
     if(loadingApresentation === true) {
       const timer = setTimeout(() => {
-        setIsVisible(true);
+        setIsVisiblee(true);
       }, 5000);
 
       return () => clearTimeout(timer);
@@ -24,7 +24,7 @@ function TimeLine({audioRef}) {
     <LoadingWindowText />
     <TextPreLoadingWindowText /> 
     <MenuBase audioRef={audioRef} setLoadingApresentation={setLoadingApresentation} loadingApresentation={loadingApresentation} />
-    {isVisible ? <Apresentation loadingApresentation={loadingApresentation} /> : <></>}
+    {isVisiblee ? <Apresentation loadingApresentation={loadingApresentation} /> : <></>}
     </>
   )
 }

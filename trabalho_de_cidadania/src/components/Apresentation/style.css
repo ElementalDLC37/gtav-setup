@@ -2,7 +2,7 @@
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
-    background: rgba(229, 133, 133, 0.474);
+    background: rgba(1, 1, 1, 0.655);
     z-index: 4;
     transition: 0.5s;
     opacity: 0;
@@ -150,4 +150,12 @@
   .data-content-text {
     width: 92%;
     margin: 0 4%;
+  }
+
+  .back {
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
   }
