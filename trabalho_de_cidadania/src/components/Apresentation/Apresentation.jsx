@@ -106,6 +106,7 @@ function MenuButtonSec({content}) {
     const [dataContent, setDataContent] = useState(<></>);
     const [scrollTop, setScrollTop] = useState(0);
     const [autoScrollEnabled, setAutoScrollEnabled] = useState(true);
+    const [prevValue, setPrevValue] = useState(null)
 
 
     const bruno = {
@@ -258,6 +259,8 @@ function MenuButtonSec({content}) {
     }
 
     useEffect(() => {
+        const scrollableElement = document.querySelector('.scroll-content');
+    
         switch (content) {
             case "Bruno":
                 setData(<>
@@ -300,9 +303,11 @@ function MenuButtonSec({content}) {
         if (autoScrollEnabled) {
           intervalId = setInterval(() => {
             setScrollTop(prevScrollTop => {
-              const { scrollHeight, clientHeight } = scrollableElement;
-              const newScrollTop = prevScrollTop + 0.2;
-              if (newScrollTop + clientHeight >= scrollHeight) {
+            const { scrollHeight, clientHeight } = scrollableElement;
+            const newScrollTop = prevScrollTop + 0.2;
+              if (newScrollTop + clientHeight >= scrollHeight || content != prevValue) {
+                setPrevValue(content)
+                setAutoScrollEnabled(false);
                 return 0;
               } else {
                 return newScrollTop;
@@ -312,7 +317,7 @@ function MenuButtonSec({content}) {
         }
     
         return () => clearInterval(intervalId);
-      }, [autoScrollEnabled]);
+      }, [autoScrollEnabled, content]);
     
       useEffect(() => {
         const scrollableElement = document.querySelector('.scroll-content');
