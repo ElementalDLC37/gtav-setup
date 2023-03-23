@@ -14,7 +14,7 @@ export default function MenuBase({audioRef, setLoadingApresentation, loadingApre
 
   return (
     <>
-    {isVisible ? <><LoadingWindowTextData setIsVisible={setIsVisible} audioRef={audioRef} setLoadingApresentation={setLoadingApresentation} loadingApresentation={loadingApresentation} /><ImageTransition /></> : null}
+    {isVisible ? <><ImageTransition /><LoadingWindowTextData setIsVisible={setIsVisible} audioRef={audioRef} setLoadingApresentation={setLoadingApresentation} loadingApresentation={loadingApresentation} /></> : null}
     </>
   )
 }
@@ -49,10 +49,10 @@ function LoadingWindowTextData({setIsVisible, audioRef, setLoadingApresentation,
 function ImageTransition()  {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    'https://picsum.photos/200/300?random=1',
-    'https://picsum.photos/200/300?random=2',
-    'https://picsum.photos/200/300?random=3',
-    'https://picsum.photos/200/300?random=4',
+    'https://pbs.twimg.com/media/Eq-JOiUW8AAKaVc?format=jpg&name=small',
+    'https://media.tenor.com/HDXIhTFsQDEAAAAC/kayne-west-selfie.gif',
+    './cabra.jpeg',
+    'http://pm1.narvii.com/6597/00b2eaf97ee9394ac647152383a5aa9be03451c8_00.jpg'
   ];
 
   useEffect(() => {

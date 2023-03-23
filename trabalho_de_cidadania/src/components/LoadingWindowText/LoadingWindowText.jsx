@@ -27,30 +27,29 @@ export default function LoadingWindowText() {
 function LoadingWindowTextData() {
   return (
     <div className="loadingWindowText">
-      <p>Lá nas quebrada onde eu moro, mano
-Tem um ponto de ônibus e um vendedor de goiaba, né
-E aí um dia eu tinha um e cinquenta
-E tava morrendo de fome, aí eu fiquei pensando
-Caraca, véi, será que eu pego o ônibus
-Ou será que compro uma goiaba, né?
-Aí eu comprei uma goiaba, bicho
-Foi uma goiaba suculenta, uma goiaba gigante
-Eu tava morrendo de fome
-E na hora que eu fui morder aquela goiaba
-Aí dois maluco ali na frente me chamaram e falaram
-Chegaí, chegaí, chegaí, mano, chegaí.</p>
-<p>Lá nas quebrada onde eu moro, mano
-Tem um ponto de ônibus e um vendedor de goiaba, né
-E aí um dia eu tinha um e cinquenta
-E tava morrendo de fome, aí eu fiquei pensando
-Caraca, véi, será que eu pego o ônibus
-Ou será que compro uma goiaba, né?
-Aí eu comprei uma goiaba, bicho
-Foi uma goiaba suculenta, uma goiaba gigante
-Eu tava morrendo de fome
-E na hora que eu fui morder aquela goiaba
-Aí dois maluco ali na frente me chamaram e falaram
-Chegaí, chegaí, chegaí, mano, chegaí.</p>
+      <p>Olha, se você não me ama
+Então não me ligue
+Não fique me fazendo queixa
+
+Não faça como as outras já tem feito
+Que minha vida é sofrendo
+Por causa de uma mulher bandida
+Já teve noite de eu querer beber veneno Olha, se você não me ama
+Então não me ligue
+Não fique me fazendo queixa
+
+Não faça como as outras já tem feito
+Que minha vida é sofrendo
+Por causa de uma mulher bandida
+Já teve noite de eu querer beber veneno Olha, se você não me ama
+Então não me ligue
+Não fique me fazendo queixa
+
+Não faça como as outras já tem feito
+Que minha vida é sofrendo
+Por causa de uma mulher bandida
+Já teve noite de eu querer beber veneno</p>
+<p>José de Alencar (1829-1877) foi um escritor brasileiro do período romântico, considerado um dos maiores nomes da literatura brasileira. Nascido em Mecejana, no Ceará, Alencar mudou-se para o Rio de Janeiro para estudar Direito e começou a carreira literária escrevendo para o jornal Correio Mercantil.</p>
       <div class="loading-icon"></div>
     </div>
   )

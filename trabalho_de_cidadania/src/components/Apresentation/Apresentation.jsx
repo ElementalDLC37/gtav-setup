@@ -52,7 +52,7 @@ export function Apresentation(loadingApresentation) {
             case "Jordan":
             setItems({
                 user: "Jordania",
-                img: "https://res.cloudinary.com/teepublic/image/private/s--Q3I4HI1v--/c_crop,x_10,y_10/c_fit,w_800/c_crop,g_north_west,h_920,w_920,x_-60,y_-85/co_rgb:ffffff,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_920,w_920/fl_layer_apply,g_north_west,x_-60,y_-85/r_460/co_ffffff,e_outline:41/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1640381998/production/designs/26605457_0.jpg",
+                img: "./cane.jpeg",
                 money: "$5675675000,30"
             })
             break;
