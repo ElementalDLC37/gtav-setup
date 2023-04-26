@@ -1,6 +1,5 @@
 {
-  "name": "trabalho_de_cidadania",
-  "private": true,
+  "name": "gtav-setup",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
